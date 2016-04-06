@@ -2,9 +2,12 @@
   "name": "boorium",
   "version": "0.0.0",
   "description": "beautiful booru client",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "standard",
+    "build": "babel -D -d lib src",
+    "buildrun": "npm run build && npm run run",
+    "run": "electron ."
   },
   "repository": {
     "type": "git",
@@ -23,6 +26,10 @@
   },
   "homepage": "https://github.com/boorium/boorium#readme",
   "devDependencies": {
-    "electron-prebuilt": "^0.37.4"
+    "babel-cli": "^6.6.5",
+    "babel-preset-es2015-node": "^5.0.3",
+    "babel-preset-stage-0": "^6.5.0",
+    "electron-prebuilt": "^0.37.4",
+    "standard": "^6.0.8"
   }
 }
