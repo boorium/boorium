@@ -1,0 +1,25 @@
+{
+  "name": "boorium",
+  "version": "0.0.0",
+  "description": "beautiful booru client",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/boorium/boorium.git"
+  },
+  "keywords": [
+    "booru",
+    "client",
+    "standalone",
+    "electron"
+  ],
+  "author": "ivan k <ivan@sq10.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/boorium/boorium/issues"
+  },
+  "homepage": "https://github.com/boorium/boorium#readme"
+}
