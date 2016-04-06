@@ -3,6 +3,9 @@
 import {app, BrowserWindow} from 'electron'
 import {join} from 'path'
 
+const BASE_DIR = join(__dirname, '../')
+const HTML_DIR = join(BASE_DIR, 'web')
+
 let mainWindow
 
 app.on('window-all-closed', () => {
@@ -15,7 +18,7 @@ app.on('ready', async () => {
     height: 600
   })
 
-  mainWindow.loadURL(`file://${join(__dirname, 'index.html')}`)
+  mainWindow.loadURL(`file://${join(HTML_DIR, 'index.html')}`)
 
   mainWindow.webContents.openDevTools()
 
